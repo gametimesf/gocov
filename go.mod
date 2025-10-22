@@ -1,4 +1,4 @@
-module github.com/axw/gocov
+module github.com/gametimesf/gocov
 
 go 1.22.0
 
