@@ -2,8 +2,6 @@
 
 Coverage reporting tool for The Go Programming Language
 
-[![Build Status](https://travis-ci.org/axw/gocov.svg?branch=master)](https://travis-ci.org/axw/gocov)
-
 ## Installation
 
 ```go install github.com/gametimesf/gocov/gocov@latest```
