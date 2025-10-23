@@ -1,0 +1,44 @@
+version: "2"
+linters:
+  default: none
+  enable:
+    - bodyclose
+    - errcheck
+    - gosec
+    - govet
+    - ineffassign
+    - nakedret
+    - noctx
+    - nolintlint
+    - staticcheck
+    - unconvert
+    - unparam
+    - unused
+  exclusions:
+    generated: lax
+    presets:
+      - comments
+      - common-false-positives
+      - legacy
+      - std-error-handling
+    paths:
+      - third_party$
+      - builtin$
+      - examples$
+formatters:
+  enable:
+    - gci
+    - gofmt
+    - goimports
+  settings:
+    gci:
+      sections:
+        - standard
+        - default
+        - prefix(github.com/gametimesf/gocov)
+  exclusions:
+    generated: lax
+    paths:
+      - third_party$
+      - builtin$
+      - examples$
